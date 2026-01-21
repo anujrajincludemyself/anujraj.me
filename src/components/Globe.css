@@ -1,0 +1,104 @@
+.globe-section {
+    min-height: 100vh;
+    padding: 5rem 0;
+    position: relative;
+    background: var(--bg-secondary);
+}
+
+.globe-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 4rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.globe-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.globe-container canvas {
+    border-radius: 50%;
+    filter: drop-shadow(0 0 40px rgba(99, 102, 241, 0.3));
+}
+
+.location-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.location-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    min-width: 280px;
+}
+
+.location-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 30px var(--glow-color);
+}
+
+.location-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.location-info h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+}
+
+.location-info p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .globe-section {
+        padding: 3rem 0;
+    }
+
+    .globe-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .location-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .location-card {
+        min-width: auto;
+        width: 100%;
+        max-width: 300px;
+    }
+}
