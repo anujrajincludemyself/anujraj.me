@@ -1,40 +1,43 @@
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import './Projects.css';
+import goFoodImg from '../assets/gofood.png';
+import npclImg from '../assets/npcl.png';
+import khilaoImg from '../assets/khilao.png';
 
 const Projects = () => {
     const projects = [
         {
             title: 'GoFood — Online Food Delivery Platform',
             description: 'A full-stack food delivery e-commerce application built using the MERN stack.',
+            image: goFoodImg,
             tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Redux Toolkit', 'JWT', 'Payment Gateway'],
             highlights: [
                 'Implemented secure JWT-based authentication and protected user sessions',
                 'Built cart, order management, and online payment flow with real-time order tracking'
             ],
             github: 'https://github.com/anujrajincludemyself/GoFood',
-            gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
         },
         {
             title: 'NPCL — Civil Road Construction Company Website',
             description: 'Production-ready business website built and deployed for a civil road construction company.',
+            image: npclImg,
             tech: ['Next.js 14', 'TypeScript', 'Tailwind CSS'],
             highlights: [
                 'Responsive, SEO-optimized UI using App Router and modular components'
             ],
             github: 'https://github.com/anujrajincludemyself/NPCL',
             live: 'https://ncplorg.com',
-            gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
         },
         {
             title: 'Khilao.com — Food Recipe Platform',
             description: 'Built a MERN-based platform for creating, managing, and discovering food recipes.',
+            image: khilaoImg,
             tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'JWT', 'Multer'],
             highlights: [
                 'Implemented JWT-based authentication and role-based access control'
             ],
             github: 'https://github.com/anujrajincludemyself/-Khilao.com',
-            gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
         }
     ];
 
@@ -64,7 +67,8 @@ const Projects = () => {
                             viewport={{ once: true }}
                             whileHover={{ y: -10 }}
                         >
-                            <div className="project-header" style={{ background: project.gradient }}>
+                            <div className="project-header">
+                                <img src={project.image} alt={project.title} className="project-image" />
                                 <div className="project-number">0{index + 1}</div>
                             </div>
 

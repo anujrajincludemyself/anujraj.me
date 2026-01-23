@@ -23,13 +23,27 @@
 }
 
 .project-header {
-    height: 120px;
+    height: 220px;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     padding: 1.5rem;
     position: relative;
     overflow: hidden;
+}
+
+.project-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.1);
 }
 
 .project-header::before {
