@@ -17,7 +17,7 @@ const Experience = () => {
         },
         {
             role: 'Full Stack Developer Intern',
-            company: 'Jesty CRM',
+            company: 'Maximize India',
             period: 'Jan 2026',
             highlights: [
                 'Working on a SaaS CRM platform built with React, Node.js, and REST APIs',
