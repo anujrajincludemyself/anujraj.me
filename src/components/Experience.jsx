@@ -6,6 +6,17 @@ const Experience = () => {
     const experiences = [
         {
             role: 'Full Stack Developer Intern',
+            company: 'MediHut',
+            period: 'Present',
+            current: true,
+            highlights: [
+                'Built frontend from using Next.js 14, TypeScript, Tailwind CSS and Reactjs',
+                'Developing backend services and APIs using NestJS'
+            ],
+            color: '#10b981'
+        },
+        {
+            role: 'Full Stack Developer Intern',
             company: 'Bucket List',
             period: 'Present',
             current: true,
@@ -17,7 +28,7 @@ const Experience = () => {
         },
         {
             role: 'Full Stack Developer Intern',
-            company: 'Maximize India',
+            company: 'Maximize Media',
             period: 'Jan 2026',
             highlights: [
                 'Working on a SaaS CRM platform built with React, Node.js, and REST APIs',
