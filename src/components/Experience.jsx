@@ -142,7 +142,7 @@ const Experience = () => {
                                 viewport={{ once: true }}
                                 whileHover={{ scale: 1.05 }}
                             >
-                                <div className="achievement-icon">🏆</div>
+                                <div className="achievement-icon">😊</div>
                                 <h4 className="achievement-title">{achievement.title}</h4>
                                 <p className="achievement-org">{achievement.organization}</p>
                                 <p className="achievement-period">{achievement.period}</p>
