@@ -75,9 +75,6 @@ const Footer = () => {
                             <p>
                                 <FaEnvelope /> anujraj24go@gmail.com
                             </p>
-                            <p>
-                                <FaPhone /> +91-9199455366
-                            </p>
                         </div>
 
                         <div className="footer-copyright">

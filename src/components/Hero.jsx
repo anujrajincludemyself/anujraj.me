@@ -29,7 +29,6 @@ const Hero = () => {
 
     const socialLinks = [
         { icon: FaEnvelope, href: 'mailto:anujraj24go@gmail.com', label: 'Email' },
-        { icon: FaPhone, href: 'tel:+919199455366', label: '+91-9199455366' },
         { icon: FaLinkedin, href: 'https://www.linkedin.com/in/anujrajmish', label: 'LinkedIn' },
         { icon: FaGithub, href: 'https://github.com/anujrajincludemyself', label: 'GitHub' },
         { icon: SiLeetcode, href: 'https://leetcode.com/u/anujsolveproblem24242/', label: 'LeetCode' },
